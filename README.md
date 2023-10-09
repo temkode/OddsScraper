@@ -14,7 +14,7 @@ You can skip the set up instructions and use the `/auth`, `/api` paths the same 
 
 ## How to Run locally
 
-Before you begin, make sure your machine has Git and Node.js with npm installed.
+Before you begin, make sure your machine has Git and Node.js with npm installed. The environment variables are included for convenience.
 
 1. **Clone this repository:** You can do this by either using `git clone` or downloading the code.
 2. **Install Dependencies:** In the root directory, execute `npm install` to install the necessary dependencies.
