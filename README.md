@@ -6,7 +6,13 @@
 
 Note that this is a simplified demo version. We have used dummy user data. The scraped race card information is stored in memory, mainly for illustrating the authorization capabilities of the API. In this setup, only admins can update the information, while both users and admins can view the data stored in memory.
 
-## How to Run
+## Use the deployed version
+
+This app is deployed to an AWS EC2 instance here http://3.8.160.46:3000
+
+You can skip the set up instructions and use the `/auth`, `/api` paths the same way as below with a HTTP client such as Postman
+
+## How to Run locally
 
 Before you begin, make sure your machine has Git and Node.js with npm installed.
 
