@@ -10,7 +10,6 @@ interface User {
 }
 
 // Dummy data
-const jwtPrivateKey = 'SecretKey';
 const users: User[] = [
   {
     id: 1,
@@ -42,7 +41,7 @@ router.post('/', async (req: Request, res: Response) => {
       id: user.id,
       role: user.role,
     },
-    jwtPrivateKey,
+    process.env.SECRETKEY,
     { expiresIn: '15m' }
   );
 

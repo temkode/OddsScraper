@@ -1,8 +1,12 @@
 import express from 'express';
+import { config } from 'dotenv';
+
+// Load environment variables
+config();
 
 // Setup the express server
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 // Import middlewares into express
 app.use(express.json());
