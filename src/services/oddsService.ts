@@ -5,6 +5,9 @@ export async function scrapeRaceInfo(url: string): Promise<any[]> {
   const browser: Browser = await launch();
   const page: Page = await browser.newPage();
 
+  const userAgent = 'OddsScraper/1.0 (temuujin.nat@gmail.com)';
+  await page.setUserAgent(userAgent);
+
   await page.goto(url);
   await page.waitForSelector('.race-card-table-container');
 

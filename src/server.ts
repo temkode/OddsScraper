@@ -13,9 +13,11 @@ import oddsRouter from './routes/odds.js';
 
 // Setup all the routes
 app.use('/api/odds', oddsRouter);
-app.use('/api/auth', authRouter);
+app.use('/auth', authRouter);
 
 // Start the server
 app.listen(port, () => {
-	console.log(`Listening on port ${port}...`);
+  console.log(`Listening on port ${port}...`);
 });
+
+export default app;
